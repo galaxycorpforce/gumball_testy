@@ -15,14 +15,6 @@ from sklearn.preprocessing import MinMaxScaler
 #TARGETS: Sally, Jane, Kimberlly
 
 """
-https://www.codementor.io/@tushar20
-
-https://www.codementor.io/@dmonn
-
-https://www.codementor.io/@csidrane
-
-https://www.codementor.io/@donaljbyrne
-
 
 
 #If you take an odd number of gumballs you can only give to sally or kim.
@@ -36,9 +28,6 @@ restrict targets based on action taken.
 
 state is how many gumballs left.
 
-#https://www.codementor.io/@maximlakin
-#https://www.codementor.io/@rupalibhati4
-#https://www.fiverr.com/deeprweb/use-machine-deep-reinforcment-learning-for-your-data-analysis-problems?context_referrer=search_gigs&source=main_banner&ref_ctx_id=d7f79e44-e143-455d-b3b5-a3d368d179e7&pckg_id=1&pos=2&context_type=auto&funnel=4afdb45e-12ea-4a51-b786-c0db3471f2cd
 """
 
 class Actions(enum.Enum):
