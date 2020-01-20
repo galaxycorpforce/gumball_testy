@@ -286,7 +286,7 @@ class Runner2():
 
 			# End timer
 			tnow = time.time()
-			print('Model Actions retrieve took %f'% (tnow-tstart,))
+#			print('Model Actions retrieve took %f'% (tnow-tstart,))
 
 			# Append the observations into the mb
 			mb_obs.append(np.copy(self.obs)) # obs len nenvs(1 step per env)
@@ -317,7 +317,7 @@ class Runner2():
 			raw_obs, rewards, self.dones, infos = self.env.step(actions)
 			# End timer
 			tnow = time.time()
-			print('Env obs retrieve took %f'% (tnow-tstart,))
+#			print('Env obs retrieve took %f'% (tnow-tstart,))
 
 			self.obs[:], self.transcript = raw_obs, [info['song'] for info in infos]
 			self.valid_moves[:] = [info['valid_actions'] for info in infos]
