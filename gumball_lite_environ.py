@@ -245,8 +245,10 @@ class GumballEnv(gym.Env):
 #		print('p1 availables: ', self._state.get_valid_moves_for_player(position='a', is_p1_perspective=True))
 #		p1_action = get_sample_action('p1', self._state.sample_actions(position='a', is_p1_perspective=True))
 		p1_action = Actions(action_as_int)
-#		if p1_action not in self._state.get_valid_moves_for_player():
-#			p1_action = self._state.sample_actions(position='a', is_p1_perspective=True)
+		if p1_action not in self._state.get_avail_actions():
+				p1_action = self._state.sample_actions()
+				print('Ilegal action selected:', Actions(action_as_int))
+				print('using action instead:', Actions(p1_action))
 #		p1_action = get_sample_action('p1', p1_action)
 		obs, reward, done, info = self._state.step(p1_action)
 
